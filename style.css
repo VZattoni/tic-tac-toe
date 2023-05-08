@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4) no-repeat fixed;
+    height: 100vh;
+    display: flex; 
+    align-items: flex-end;
+}
+
+h1{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.stage{  
+    overflow: hidden;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255,255,255,0.2);
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,1);
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    background-color: rgba(255,255,255,.6);
+    border: 1px solid rgba(180,180,180,1);
+    display: inline-block;
+}
+
+.o{
+    position: relative;
+}
+
+.o::after{
+    position: absolute;
+    content: "\1F6E1"; /*Usando o after para poder colocar um content*/
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.x{
+    position: relative;
+}
+
+.x::after{
+    position: absolute;
+    content: "\2694";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.restart{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: rgba(230,230,230,.2); */
+    background-color: rgba(240, 10, 68, 0.8);
+    color: white;
+    width: 170px;
+    margin: auto;
+    margin-top: 20px;
+    height: 30px;
+    position: relative;
+    border: 1px solid rgba(255,255,255,.6);
+    /* border: 1px solid rgba(189, 60, 92, 0.6); */
+    border-radius: 10px;
+}
+
+.restart::after{
+    line-height: 30px;
+    content: 'Restart Game';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.restart:hover{
+    background-color: rgba(240, 10, 68, 1);
+    /* box-shadow: 0px 0px 10px black; */
+}
